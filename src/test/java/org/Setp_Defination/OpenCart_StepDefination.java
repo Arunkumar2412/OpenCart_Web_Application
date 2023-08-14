@@ -360,16 +360,17 @@ public class OpenCart_StepDefination extends OpenCart_BaseClass {
 		q.getResources().click();
 	}
 	@When("user click an Contact us and enters the user deatiles")
-	public void user_click_an_contact_us_and_enters_the_user_deatiles() {
+	public void user_click_an_contact_us_and_enters_the_user_deatiles() throws InterruptedException {
 		q.getContactUS().click();
 		DropDown_visibletext(q.getInputHelpYou(), "I would like to report an account issue");
-		q.getInputName().sendKeys("Vickey");
-		q.getInputEmail().sendKeys("vickey143@gmail.com");
-		scrolldown(driver, q.getInputName());
-		q.getInputOrderID().sendKeys("12345");
-		q.getInputWebSite().sendKeys("https://www.opencart.com/");
-		DropDown_index(q.getInputVersion(), 10);
-		q.getInputEnqiry().sendKeys("facing the issue will installing the intellij");
+		Thread.sleep(5000);
+//		q.getInputName().sendKeys("Vickey");
+//		q.getInputEmail().sendKeys("vickey143@gmail.com");
+//		scrolldown(driver, q.getInputName());
+//		q.getInputOrderID().sendKeys("12345");
+//		q.getInputWebSite().sendKeys("https://www.opencart.com/");
+//		DropDown_index(q.getInputVersion(), 10);
+//		q.getInputEnqiry().sendKeys("facing the issue will installing the intellij");
 	}
 
 

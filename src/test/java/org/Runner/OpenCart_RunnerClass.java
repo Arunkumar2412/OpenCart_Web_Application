@@ -24,6 +24,7 @@ public class OpenCart_RunnerClass {
 		ChromeOptions z=new ChromeOptions();
 		z.addArguments ("--remote-allow-origins=*");
 		driver = new ChromeDriver();
+
 	}
 	
 

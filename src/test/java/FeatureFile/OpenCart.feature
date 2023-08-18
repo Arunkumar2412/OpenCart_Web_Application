@@ -2,8 +2,8 @@
 Feature: To validate the Opencart functionalities
 Scenario: To validate the Features functionalities
 Given To enter the URL
-And maximize the window
 When user click an Features
+And maximize the window
 And user click an unlimited everything link 
 And user click an customer link
 And user click an Shipping,Payments and Reports link
